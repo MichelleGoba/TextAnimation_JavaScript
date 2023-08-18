@@ -30,6 +30,33 @@ body{
     transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
 
+.rotating-text p .word .letter.in{
+    transition: 0.8s ease;
+}
+
+.rotating-text p .word .letter.behind{
+    transform: rotateX('-90deg');
+}
+
 .w-1, .w-2{
     color: orangered;
 }
+
+.letter {
+    transform: rotate(30deg);
+  }
+  
+  .letter.out {
+    transform: rotate(30deg);
+    opacity: 0;
+  }
+  
+  .letter.behind {
+    transform: rotate(30deg);
+    opacity: 0.5;
+  }
+  
+  .letter.in {
+    transform: rotate(30deg);
+    opacity: 1;
+  }
